@@ -6,12 +6,12 @@ pidgeon_list = {}
       names.each do |name|
         pidgeon_list[name] = {} if pidgeon_list[name] == nil
         pidgeon_list[name][attribute] = [] if pidgeon_list[name][attribute] == nil
-        pidgeon_list[name][attribute] << valuekey
+        pidgeon_list[name][attribute] << valuekey.to_s
       end
     end
   end
 
-  
+
 
 pidgeon_list
 end
