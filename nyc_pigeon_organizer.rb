@@ -4,11 +4,14 @@ pidgeon_list = {}
   data.each do |attribute, values|
     values.each do |valuekey, names|
       names.each do |name|
-        pidgeon_list[name] = {}
-        pidgeon_list[name][attribute] = valuekey
+        pidgeon_list[name] = {} if pidgeon_list[name] == nil
+        pidgeon_list[name][attribute] = [] if pidgeon_list[name][attribute] == nil
+        pidgeon_list[name][attribute] << valuekey
       end
     end
   end
+
+  
 
 pidgeon_list
 end
