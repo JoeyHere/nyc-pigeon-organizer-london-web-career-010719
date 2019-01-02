@@ -11,7 +11,5 @@ pidgeon_list = {}
     end
   end
 
-
-
 pidgeon_list
 end
